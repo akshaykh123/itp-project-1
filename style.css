@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1360px;
+  margin: auto;
+}
+
+/*******************
+        header
+*******************/
+
+header #header-top {
+  background-color: #192f59;
+  color: #96a2b8;
+  /* padding: 18px 0; */
+}
+
+header #header-top .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #header-top .left {
+  padding: 18px 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  gap: 15px;
+  align-items: center;
+}
+
+header #header-top .right ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+header #header-top .right ul a {
+  text-decoration: none;
+  color: #96a2b8;
+}
+
+header #header-top .right ul a.green {
+  /* background-color: green; */
+}
+
+header #header-bottom .logo {
+  max-width: 330px;
+}
+
+header #header-bottom .logo img {
+  width: 100%;
+}
+
+header #header-bottom .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+header #header-bottom .wrapper nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header #header-bottom .wrapper nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header #header-bottom .wrapper .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+/*******************
+    hero-section
+*******************/
+
+#hero-section {
+  background: url("https://goodlayers.b-cdn.net/kingster/wp-content/uploads/2018/08/slider-2.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  background-position: 100% 100%;
+  padding: 220px 0;
+}
+
+#hero-section h3 {
+  font-size: 33px;
+  font-weight: 300;
+  color: #fff;
+}
+
+#hero-section h1 {
+  font-size: 83px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#hero-section .btn-container {
+  position: relative;
+}
+
+#hero-section button {
+  padding: 19px 21px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#hero-section .left-green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #29a552;
+  z-index: 2;
+}
+
+/*******************
+        blocks
+*******************/
+
+#blocks .wrapper {
+  margin: 0 auto;
+  margin-top: -30px;
+  background-color: #fff;
+}
+
+#blocks .top-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 0;
+  box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+  /* border: 1px solid black; */
+}
+
+#blocks .top-block .single-block {
+  display: flex;
+  gap: 10px;
+}
+
+#blocks .bottom-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#blocks .bottom-block .left {
+  /* width: 49%; */
+  flex: 1;
+}
+
+#blocks .bottom-block .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#blocks .bottom-block .right {
+  /* width: 49%; */
+  flex: 1;
+  background: url("https://goodlayers.b-cdn.net/kingster/wp-content/uploads/2018/08/about-bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#blocks .bottom-block .right .right-wrapper {
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 500px;
+  /* border: 1px solid black; */
+}
+
+#blocks .bottom-block .right .right-wrapper div {
+  margin-bottom: 20px;
+}
+
+#blocks .bottom-block .right .right-wrapper h3 {
+  font-size: 29px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#blocks .bottom-block .right .right-wrapper p.subtitle {
+  font-size: 19px;
+  font-weight: 500;
+  color: #51be78;
+}
+
+#blocks .bottom-block .right .right-wrapper p.description {
+  font-size: 18px;
+  color: #c1d3ff;
+}
+
+#blocks .bottom-block .right .right-wrapper button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #3db166;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+}
