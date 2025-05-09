@@ -91,7 +91,7 @@ header #header-bottom .wrapper .menu {
 *******************/
 
 #hero-section {
-  background: url("https://goodlayers.b-cdn.net/kingster/wp-content/uploads/2018/08/slider-2.jpg");
+  background: url("images/slider-2.jpg");
   background-size: cover;
   /* background-position: center; */
   background-position: 100% 100%;
@@ -173,7 +173,7 @@ header #header-bottom .wrapper .menu {
 #blocks .bottom-block .right {
   /* width: 49%; */
   flex: 1;
-  background: url("https://goodlayers.b-cdn.net/kingster/wp-content/uploads/2018/08/about-bg-2.jpg");
+  background: url("images/about-bg-2.jpg");
   background-size: cover;
   background-position: center;
 }
