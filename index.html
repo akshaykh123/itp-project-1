@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kingster - School, College & University</title>
+
+    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -29,7 +31,7 @@
           <div class="left">
             <div><p>contact@KUTheme.edu</p></div>
             <div>
-              <i class="fas fa-phone-alt"></i>
+              <i class="fas fa-phone"></i>
               <span>+1-3435-2356-222</span>
             </div>
           </div>
@@ -46,23 +48,24 @@
       <div id="header-bottom">
         <div class="container wrapper">
           <div class="logo">
-            <img src="images/logo.png" alt="logo" />
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" />
+            </a>
           </div>
 
           <div class="menu">
             <nav>
               <ul type="none">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Admission</a></li>
-                <li><a href="#">University Life</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="athletics.html">Athletics</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
                   <a href="#"><i class="fas fa-search"></i></a>
                 </li>
               </ul>
             </nav>
-            <!-- <span><i class="fas fa-search"></i></span> -->
           </div>
         </div>
       </div>
@@ -89,8 +92,8 @@
                 <img src="images/icon-1.png" alt="img" />
               </div>
               <div>
-                <p>University Life</p>
-                <p>Overall in here</p>
+                <p class="title">University Life</p>
+                <p class="caption">Overall in here</p>
               </div>
             </div>
             <div class="single-block">
@@ -98,8 +101,8 @@
                 <img src="images/icon-2.png" alt="img" />
               </div>
               <div>
-                <p>Graduation</p>
-                <p>Getting Diploma</p>
+                <p class="title">Graduation</p>
+                <p class="caption">Getting Diploma</p>
               </div>
             </div>
             <div class="single-block">
@@ -107,8 +110,8 @@
                 <img src="images/icon-3.png" alt="img" />
               </div>
               <div>
-                <p>Athletics</p>
-                <p>Sport Clubs</p>
+                <p class="title">Athletics</p>
+                <p class="caption">Sport Clubs</p>
               </div>
             </div>
             <div class="single-block">
@@ -116,8 +119,8 @@
                 <img src="images/icon-4.png" alt="img" />
               </div>
               <div>
-                <p>Social</p>
-                <p>Overall in here</p>
+                <p class="title">Social</p>
+                <p class="caption">Overall in here</p>
               </div>
             </div>
           </div>
@@ -246,14 +249,16 @@
       <div class="container wrapper">
         <div class="one">
           <div><img src="images/logo-white.png" alt="img" /></div>
-          <div>
+          <div class="address">
             <p>Box 35300</p>
             <p>1810 Campus Way NE</p>
             <p>Bothell, WA 98011-8246</p>
           </div>
-          <div><p>+1-2534-4456-345</p></div>
+          <div class="phone"><p>+1-2534-4456-345</p></div>
           <div>
-            <a href="mailto:admin@kingsteruni.edu">admin@kingsteruni.edu</a>
+            <a href="mailto:admin@kingsteruni.edu" class="mail"
+              >admin@kingsteruni.edu</a
+            >
           </div>
         </div>
 
@@ -301,30 +306,16 @@
         <div class="container">
           <div><p>Copyright All Right Reserved 2025, GoodLayers</p></div>
           <div>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-skype"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      var header = document.getElementById("header-bottom");
-      var sticky = header.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("fixed");
-        } else {
-          header.classList.remove("fixed");
-        }
-      }
-    </script>
+    <script src="fixed-header.js"></script>
   </body>
 </html>

@@ -1,0 +1,124 @@
+/*******************
+      banner
+*******************/
+
+#banner {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("images/admission-title-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 85vh;
+
+  display: flex;
+  align-items: end;
+}
+
+#banner .container {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+#banner p {
+  font-size: 21px;
+  color: #3db166;
+}
+
+#banner h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 426px) {
+  #banner {
+    min-height: 50vh;
+    text-align: center;
+  }
+
+  #banner h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1439px) {
+  #banner .banner-content {
+    padding-left: 50px;
+  }
+}
+
+/*******************
+      history
+*******************/
+
+#history .top {
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+#history .top a {
+  text-decoration: none;
+  color: #a0a0a0;
+  margin-right: 15px;
+}
+
+#history .top span {
+  color: #3db166;
+  margin-left: 15px;
+}
+
+#history .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  padding: 40px 0;
+}
+
+#history .bottom > div {
+  flex: 1;
+}
+
+#history .bottom h2 {
+  font-size: 29px;
+  display: inline-block;
+  border-bottom: 4px solid #3db166;
+  padding-bottom: 5px;
+}
+
+#history .bottom .text {
+  padding: 0 20px;
+  color: #6b6b6b;
+  line-height: 27px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 426px) {
+  #history .top {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+
+  #history .bottom {
+    display: block;
+    padding: 20px 10px;
+  }
+
+  #history .bottom h2 {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1439px) {
+  #history .top,
+  #history .bottom {
+    padding: 20px 5px;
+  }
+}
